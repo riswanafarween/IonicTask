@@ -1,0 +1,26 @@
+<view title="'List Of Companies'">
+
+    <div class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Search" ng-model="query[queryBy]" autocorrect="off" >
+            <button class="button button-clear" ng-click="clearSearch()">X</button>
+        </label>
+		<!-- <label class="item-input-wrapper"> -->
+		<p id="filterSearch">Filter & Search By</p>
+        <select ng-model="queryBy">
+                    <option value="comapnyName">NAME</option>
+                    <option value="companyDepartments">Departments</option>
+        </select>
+		<!-- </label>		 -->
+    </div>
+    <content has-header="true" has-subheader="true">
+        <list>
+            <item ng-repeat="company in companies | filter:query" type="item-text-wrap" href="#/company/{{company.companyID}}">
+                <h3>{{company.comapnyName}}</h3>
+                <p>{{company.companyDepartments}}</p>
+            </item>
+            </item>
+        </list>
+    </content>
+</view>

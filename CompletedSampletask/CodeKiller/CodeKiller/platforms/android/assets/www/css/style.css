@@ -1,0 +1,45 @@
+/* Empty. Add your own CSS if you like */
+body .itemPadding{
+padding: 120px 25px;
+}
+.itemsInList{
+border-style:none !important;
+}
+::-webkit-input-placeholder {
+   color: red;
+}
+body .footer{
+position:absolute;
+bottom:0px;
+width:100%;
+}
+.footer a{
+float: right;
+color: #FFF;
+text-decoration: none;
+padding: 15px 35px;
+font-size: 1.2em;
+}
+.signUpLogin{
+padding:0px;
+}
+.signUpLogin .button{
+width:40%;
+}
+.signUpLogin  .buttonA{
+background:#BD0B0B;
+color:#fff;
+font-size: 1em;
+height: 50px;
+border:none !important;
+}
+.signUpLogin .buttonB{
+background:#fff;
+color:#BD0B0B;
+font-size: 1em;
+height: 50px;
+border:none !important;
+}
+body .content{
+background-color: #BD0B0B;
+}
